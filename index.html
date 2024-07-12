@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FlexBox Layout</title>
+    <style>
+        .container{
+            border: 2px solid rebeccapurple;
+            display: flex;
+            justify-content: space-around;
+            /* align-items: center; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            flex-direction:row-reverse;
+            height: 250px;
+            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
+        }
+        .box{
+            border: 2px dashed red;
+            width: 50px;
+            height: 50px;
+        }
+        
+       nav{
+        display: flex;
+        justify-content: space-between;
+       }
+        nav a{
+            text-decoration: none;
+            
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* border: 2px solid red; */
+            /* width: 50%;      */
+        }
+        .login-form input{
+            margin-top: 20px;
+        }
+        .login-form-continar{
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid rebeccapurple; */
+            /* height: 90vh; */
+        }
+
+    </style>
+</head>
+<body>
+   
+        <nav>
+            <div>
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+            </div>
+            <a href="">Login</a>
+         </nav>
+    
+
+    <section class="login-form-continar">
+     <form  class="login-form">
+        <H3>Please Login</H3>
+        <input type="email" placeholder="Your Email" name="" id="" required>
+        <input type="password" placeholder="Your Password " name="" id="" required>
+        <input type="submit" value="Login">
+    </section>
+
+     </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1> FlexBox Layout</h1>
+    <!-- div.container কারো ভিতরে ক্লাস দিতে চাইলে এই ভাবে কিখে দিতে হয় -->
+    <div class="container">
+        <!-- .box{box$}*3 -->
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+        <div class="box">box9</div>
+        <div class="box">box10</div>
+        
+    </div>
+
+
+
+
+
+</body>
+</html>
